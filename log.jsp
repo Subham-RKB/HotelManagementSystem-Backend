@@ -15,7 +15,7 @@
 	try {
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection DB_con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Hotel", "root",
-                "L@v@iris870");
+                "");
         Statement Query_stat = DB_con.createStatement();
         Query_stat.executeUpdate("insert into hello values('"+u+"','"+p+"');");
         System.out.println("done");
